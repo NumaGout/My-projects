@@ -13,7 +13,7 @@ Many of these files are coded in French.
 
 ## Second year
 
-- cavalier.py : Coding the knight's tour probleme where a chess knight needs to travel all the chessboard by going a case one time only
+- parcours_cavalier.py : Coding the knight's tour probleme where a chess knight needs to travel all the chessboard by going a case one time only
 - morpion.py : Tic-tac-toe game, there are some AI work on it (minmax, best first, alpha beta (I didn't do the last one))
 - colonie_de_fourmi.py : Ant colony optimization algorithms to find the shortest way on a graph. There is a part of genetic algorihtme. It didn't work well
 - neural_network.ipynb : ipython notebook on how does a basic neural network works, simple digit identification
