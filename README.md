@@ -15,7 +15,7 @@ Many of these files are coded in French.
 
 - parcours_cavalier.py : Coding the knight's tour probleme where a chess knight needs to travel all the chessboard by going a case one time only
 - morpion.py : Tic-tac-toe game, there are some AI work on it (minmax, best first, alpha beta (I didn't do the last one))
-- colonie_de_fourmi.py : Ant colony optimization algorithms to find the shortest way on a graph. There is a part of genetic algorihtme. It didn't work well
+- colonie_de_fourmi.py : Ant colony optimization algorithms to find the shortest way on a graph. There is a part of genetic algorihtme. It didn't work well, comment the line 69 to stop the genetic part
 - neural_network.ipynb : ipython notebook on how does a basic neural network works, simple digit identification
 - Chaos file : 4 exercices on the chaos. Contain four ipython notebook of Newton Fractal, Lorenz system, Rössler attractorand Sierpiński triangle
 
