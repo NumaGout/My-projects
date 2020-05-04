@@ -1,0 +1,5 @@
+Numa 8 2 80%
+Gilbert 0 1 0
+Chirac 2 1 66%
+Pam Le Cafard 1 0 100
+Marc Dutroux 0 1 0
