@@ -68,7 +68,7 @@ class board():
         self.apple = i, j
         
         self.fen = fen # tkinter window
-        self.fen.shortest_way = np.linalg.norm(snake.sum_tuple(self.apple, snake.neg_tuple(self.snake.position[0])), ord = 1) - 1
+        self.fen.shortest_way = np.linalg.norm(snake.sum_tuple(self.apple, snake.neg_tuple(self.snake.position[0])), ord = 1)
         
     def new_apple(self):
         ''' Create a new apple on random coords '''
@@ -89,7 +89,7 @@ class board():
             i, j = (np.random.randint(self.x), np.random.randint(self.y))
         self.apple = i, j
         
-        self.fen.shortest_way = np.linalg.norm(snake.sum_tuple(self.apple, snake.neg_tuple(self.snake.position[0])), ord = 1) - 1
+        self.fen.shortest_way = np.linalg.norm(snake.sum_tuple(self.apple, snake.neg_tuple(self.snake.position[0])), ord = 1)
         self.fen.id_apple = self.fen.Can.create_oval(i*10, j*10, (i+1)*10, (j+1)*10, fill = 'red') # show the apple on the canvas of the tkinter window
         
     def __str__(self):
@@ -221,7 +221,7 @@ class Game(Tk):
         
         self.move_speed = 100
         
-        self.nb_moves = 0
+        self.nb_moves = 1
         
         self.add_size = 3
         
@@ -298,7 +298,7 @@ class Game(Tk):
             self.grow += self.add_size             
             self.board.new_apple()
             self.update_score()
-            self.shortest_way = np.linalg.norm(snake.sum_tuple(self.board.apple, snake.neg_tuple(self.board.snake.position[0])), ord = 1) - 1
+            self.shortest_way = np.linalg.norm(snake.sum_tuple(self.board.apple, snake.neg_tuple(self.board.snake.position[0])), ord = 1)
         else:
             if self.grow != 0:
                 self.grow -= 1     
@@ -307,7 +307,7 @@ class Game(Tk):
     def update_score(self):
         ''' Update the score on the frameControle '''
         self.score += int(round(self.points_scored(self.shortest_way, self.nb_moves)))
-        self.nb_moves = 0
+        self.nb_moves = 1
         self.lscore.config(text = 'Score = '+ str(self.score))
         
     def newgame(self):
@@ -326,7 +326,7 @@ class Game(Tk):
         self.grow = 0
         self.end = False
         self.ad.config(text = '')
-        self.nb_moves = 0
+        self.nb_moves = 1
         
         
     def press_key(self, event):
