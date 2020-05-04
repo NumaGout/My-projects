@@ -230,7 +230,7 @@ class Game(Tk):
         if event.widget.identify(event.x, event.y) == 'slider':
             event.widget.goodclic = True
         else:
-            event.widget.godclic = False
+            event.widget.goodclic = False
         
     def change_move_speed(self, event):
         ''' Change move speed according to the scale '''
